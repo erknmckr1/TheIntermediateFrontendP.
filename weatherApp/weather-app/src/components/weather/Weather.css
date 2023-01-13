@@ -1,0 +1,91 @@
+.weather{
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #fff;
+    background-color:#AED6F1 ;
+    margin: 0 auto 0 auto;
+    padding: 10px 20px 0 20px;
+
+}
+.cityList{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content:space-around;
+}
+.header,
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+.ext{
+    padding: 0 40px;
+}
+/*Navbar start*/
+.listt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px 10px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+.navText{
+    text-decoration: underline;
+    color: #fff;
+}
+.navText:hover{
+    color:#34495E !important;
+}
+
+.city{
+    font-weight: 700;
+    font-size:30px;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.weather-desc{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.weather-icon{
+    width: 100px;
+}
+
+.temp{
+    font-weight: 800;
+    font-size: 80px;
+    letter-spacing: -5px;
+
+}
+.details{
+    width: 100%;
+    margin-left: 20px;
+}
+.paramater_row{
+    display: flex;
+    justify-content: space-evenly ;
+}
+.paramater_label{
+text-align: left;
+font-weight: 300;
+font-size: 12px;
+}
+.paramater_value{
+    font-weight: 700;
+    font-size: 15px;
+    text-align: right;
+}
+.paramater_label.title{
+    border-bottom: 1px solid;
+}

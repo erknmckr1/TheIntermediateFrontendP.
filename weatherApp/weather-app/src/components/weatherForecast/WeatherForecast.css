@@ -1,0 +1,47 @@
+.Accor{
+    background-color:#AED6F1 !important;
+    color: #fff;
+    border-width: 1px;
+    height: 60px;
+    font-size: 14px;
+    padding: 5px 10px;   
+}
+.title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.forecastImg{
+    width: 50px;
+}
+.day{
+    font-weight: 600;
+    color:#34495E;
+}
+.weatherDesc{
+    color: #626567;
+}
+.min-max{
+    color: #909497;
+}
+.daily-weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-collapse{
+    border: 0  !important;
+    background-color:#AED6F1 !important;
+    font-size: 14px;
+    
+    
+}
+.accordion-body{
+  display: flex;
+  justify-content: space-between;
+    
+}
+.hourly-forecast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
