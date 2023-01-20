@@ -9,7 +9,7 @@ function WeatherForecast() {
     .slice(currentDay, days.lenght)
     .concat(days.slice(0, currentDay));
 
-  console.log(forecastWeather);
+  //console.log(forecastWeather);
   
   // Bir gün için dört farklı hava durumu elde edelim. 
   const forecastFiltered = forecastWeather.list.filter((item, index)=>{
@@ -27,9 +27,7 @@ function WeatherForecast() {
           const date = new Date(item.dt * 1000)
           const currentDay = date.toDateString();
           const hour = date.getUTCHours();
-          console.log(currentDay)
-          console.log(hour)
-          console.log(date)
+          
           return (
           <div className="accordion-item" key={index}>
             <button
@@ -40,9 +38,10 @@ function WeatherForecast() {
               aria-expanded="false"
               aria-controls={`flush-collapse${collapseCoutn[index]}`}
             >
-              <div className="daily-weather">
+              <div className="daily-weather">  
+                
                 <span className="day">
-                  {goSevenDaysFromCurrentDay[index]} |
+                  {goSevenDaysFromCurrentDay[index]} 
                 </span>
                 <img
                   alt="weather"
@@ -50,10 +49,10 @@ function WeatherForecast() {
                   src={`weather_icons/${item.weather[0].icon}.png`}
                 />
                 <span className="weatherDesc">
-                  | {item.weather[0].description}
+                   {item.weather[0].description}
                 </span>
                 <span className="min-max">
-                  | {item.main.temp_min.toFixed(1)}°C /{" "}
+                   {item.main.temp_min.toFixed(1)}°C /{" "}
                   {item.main.temp_max.toFixed(1)}°C
                 </span>
               </div>

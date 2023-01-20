@@ -16,25 +16,30 @@
 .day{
     font-weight: 600;
     color:#34495E;
+    width: 100px;
 }
 .weatherDesc{
     color: #626567;
+    width: 100px;
 }
 .min-max{
     color: #909497;
+    width: 100px;
 }
 .daily-weather{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 100rem;
+    align-content: center;
 }
+
 .accordion-collapse{
     border: 0  !important;
     background-color:#AED6F1 !important;
     font-size: 14px;
-    
-    
 }
+
 .accordion-body{
   display: flex;
   justify-content: space-between;

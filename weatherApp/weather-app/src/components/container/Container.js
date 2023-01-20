@@ -1,4 +1,4 @@
-import Navbar from "../navbar/Navbar";
+import Navbar from "../Search/SearchInput";
 import "./container.css";
 import WeatherCurrent from "../weather/WeatherCurrent";
 import { useWeatherApi } from "../../context/Weather";
@@ -11,9 +11,10 @@ function Container() {
     setCurrentWeather,
     setForecastWeather,
   } = useWeatherApi();
-
+  console.log(currentWeather)
   const handleOnSearchChange = (searchData) => {
-    const [lat, lon] = searchData.value.split(","); /* * ** * * ** * */
+    const lat = searchData[0].latitude
+    const lon = searchData[0].longitude
     const currentWeatherFetch = fetch(
       `${weatherApiUrl}/weather?lat=${lat}&lon=${lon}&appid=${weatherApiKey}&units=metric` // anlık hava durumu verılerı
     );

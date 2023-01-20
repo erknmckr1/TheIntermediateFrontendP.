@@ -8,16 +8,9 @@ const WeatherApiContext = createContext()
 const WeatherProvider = ({ children }) => {
 
     
-    const [city, setCity] = useState(null)
+    const [city, setCity] = useState("")
     //
-    const cityDetailsApi = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': '4dfee1b538mshf3e225b2df6d084p1a559djsn69945ba46169',
-        'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
-      }
-    };
-    const geoApiUrl ='https://wft-geo-db.p.rapidapi.com/v1/geo'
+   
 
     const weatherApiUrl = 'https://api.openweathermap.org/data/2.5'
     const weatherApiKey = '2d25b062c228857098a45d3b1936fda2'
@@ -34,8 +27,6 @@ const WeatherProvider = ({ children }) => {
     const values = {
         setCity,
         city,
-        geoApiUrl,
-        cityDetailsApi,
         weatherApiUrl,
         weatherApiKey,
         currentWeather,

@@ -18,25 +18,9 @@ function Weather() {
     <>
       <div className="weather">
         <div className="currentWeather">
-          <nav className="navv">
-            <ul className="listt">
-              <li className="list_item">
-                <a className="navText" type="button">İstanbul</a>
-              </li>
-              <li>
-                <a className="navText" type="button">New York</a>
-              </li>
-              <li>
-                <a className="navText" type="button">Paris</a>
-              </li>
-              <li>
-                <a className="navText" type="button">Roma</a>
-              </li>
-            </ul>
-          </nav>
           <div className="header">
             <div>
-              <p className="city">{currentWeather.city}</p>
+              <p className="city">{currentWeather.name}</p>
               <p className="weather-desc">
                 {currentWeather.weather[0].description}
               </p>
