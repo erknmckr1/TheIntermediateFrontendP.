@@ -1,0 +1,1 @@
+- navigator.clipboard.writeText(item.symbol) -> belirtilen veriyi kullanıcının panosuna yazdırdık.

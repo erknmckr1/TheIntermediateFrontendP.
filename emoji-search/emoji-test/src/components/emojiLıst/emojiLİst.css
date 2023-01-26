@@ -1,0 +1,35 @@
+.listDiv{
+    background-color: #EBF5FB;
+    width: 50rem;
+    height: 50rem;
+    overflow: auto;
+   
+}
+.listDiv .list{
+    padding: 0 5rem;
+}
+.listDiv .list_item{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+.listDiv .selected{
+    background-color: #EAEDED;
+}
+.listDiv .list_item .emojiDiv{
+    width: 10rem;
+    display: flex;
+    align-items: center;
+}
+.listDiv .list_item .emojiDiv .symbol{
+    font-size: 30px;
+}
+.listDiv .list_item .emojiDiv .title{
+margin-left: 1.5rem;
+}
+.listDiv .list_item  .copy{
+    cursor: pointer;
+}

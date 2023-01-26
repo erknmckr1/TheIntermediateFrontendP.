@@ -1,0 +1,20 @@
+.search_Div{
+    width: 50rem;
+    background-color: #D1F2EB;
+}
+.title_text{
+   
+    font-size: 35px;
+    padding: 0 1rem;
+    font-weight: 600;
+    color:rgb(100,100,100)
+}
+.search_ınput{
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid rgb(208, 200, 200) ;
+    border-width: 3px;
+    border-radius: 5px;
+    margin: 1rem 0;
+
+}
