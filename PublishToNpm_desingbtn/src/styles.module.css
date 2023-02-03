@@ -1,0 +1,27 @@
+/* add css module styles here (optional) */
+
+button {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  margin-left: 5px;
+  
+}
+.primary {
+  border: 1px solid #1790ff;
+  background-color: #1790ff;
+  color: #fff;
+}
+.dashed{
+  border: 1px dashed #B3B6B7 ;
+}
+.text{
+  border: none;
+}
+.link{
+  border: none;
+  color: #1790ff;;
+}
