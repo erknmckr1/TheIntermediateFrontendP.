@@ -1,24 +1,11 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggle, destroy } from "../redux/todos/todosSlice";
+import { toggle, destroy,selectFilteredTodos } from "../redux/todos/todosSlice";
 
-let filtered = [];
+
 function Todolist() {
-  const items = useSelector((state) => state.todos.items);
+  const filtered = useSelector(selectFilteredTodos)
   const dispatch = useDispatch();
-  const activeFilter = useSelector((state) => state.todos.active);
-  
-
-   
-  filtered = items;
-  // active state'i all degıl ise asagıdaki şart blogu uygulanacak active statini ContentFooter kısmında guncellıyorduk ona gore ekrana gelecek. 
-  if (activeFilter !== "all") {
-    filtered=items.filter((todo) => {
-      return activeFilter === "active"
-        ? todo.completed === false 
-        : todo.completed === true ;
-    });
-  }
 
   const handleDestroy = (id) => {
     if (window.confirm("Are you sure?")) {
