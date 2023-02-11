@@ -8,7 +8,9 @@ function Form() {
   const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addTodo({ title }));
+    if(!title===""){
+      dispatch(addTodo({ title }));
+    }
     setTitle("")
   };
   return (
