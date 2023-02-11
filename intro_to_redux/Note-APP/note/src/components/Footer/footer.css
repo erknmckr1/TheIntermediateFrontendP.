@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap');
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #FEF9E7 ;
+    
+
+}
+.footer_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+.footer_row .footer_title{
+    font-family: 'Zeyada', cursive;
+    padding-left: 9rem;
+    
+    
+}
+.footer_row .list-group{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: 'Zeyada', cursive;
+    font-size: 25px;
+    
+}
+.footer_row .list-group .list-item a{
+    color: black ;
+}
+.footer_row .time_Div{
+    display: flex;
+    justify-content: center;
+    font-family: 'Zeyada', cursive;
+    font-size: 29px;
+}
