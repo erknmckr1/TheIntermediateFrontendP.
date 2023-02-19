@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap");
+/*Layout*/
+nav {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+nav .link_item {
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #F9E79F;
+  font-size: 4rem;
+  font-family: 'Sassy Frass', cursive;
+}
+nav .logo {
+  padding: 5px 20px;
+  color: #F9E79F;
+  font-family: 'Sassy Frass', cursive;
+  font-size: 5rem;
+}
+
+/*Layout*/
+.card:hover{
+background-color: #EBF5FB ;
+}
+.button_div{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 4rem;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+.buttons{
+  align-items: center;
+  display: flex;
+  width: 25rem;
+  justify-content: space-around;
+ 
+
+}
+.buttons .btn{
+  padding: 0 px;
+  color: #fff;
+}
+.row a {
+  color: black;
+  text-decoration: none;
+}
+.row a:hover{
+  color: #000;
+
+}
