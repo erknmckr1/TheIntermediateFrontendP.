@@ -33,7 +33,7 @@ function Episodes() {
       <h1>Episodes</h1>
       {status === "loading" && <Loading />}
       <div className="row">
-        {data.results.map((episode) => (
+        { status==="succeeded" && data.results.map((episode) => (
           <p>{episode.name}</p>
         ))}
       </div>

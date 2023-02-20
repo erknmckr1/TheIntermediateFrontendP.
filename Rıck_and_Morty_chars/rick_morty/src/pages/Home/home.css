@@ -15,6 +15,11 @@ nav .link_item {
   font-size: 4rem;
   font-family: 'Sassy Frass', cursive;
 }
+nav .link_item:hover{
+  border-bottom: 1px solid #F9E79F;
+  color: #fff !important;
+
+}
 nav .logo {
   padding: 5px 20px;
   color: #F9E79F;
@@ -22,9 +27,59 @@ nav .logo {
   font-size: 5rem;
 }
 
-/*Layout*/
+/*Layout end*/
+/*search from start*/
+
+.search_form{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.search_form input{
+  max-width: 40rem !important;
+}
+.select_form input::placeholder {
+  color: #F9E79F!important;
+}
+.search_form .btn{
+  background-color: #F9E79F !important;
+
+}
+.search_form .search_buttons{
+ width: 20rem;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+
+/*search from end*/
+
+/* page body start*/
+ 
+/* page body end*/
+.title{
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Sassy Frass', cursive;
+}
+/*Left Panel start*/
+.left_title{
+  color: #F9E79F;
+  text-align: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #F9E79F;;
+  font-size: 3rem;
+  font-family: 'Sassy Frass', cursive;
+}
+
+/*Left Panel end*/
 .card:hover{
 background-color: #EBF5FB ;
+
 }
 .button_div{
   display: flex;
