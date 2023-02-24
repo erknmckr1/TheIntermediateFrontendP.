@@ -1,0 +1,24 @@
+.product_img{
+   height: 200px;
+}
+.footer{
+    display: flex ;
+    max-width: 250px;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer input{
+ width: 60px;
+}
+.disabled{
+    background-color: grey !important;
+    border: 1px solid grey;
+}
+.product_name{
+    font-weight: 700;
+}
+.product_price{
+    color: #1E8449;
+    font-weight: 700;
+}

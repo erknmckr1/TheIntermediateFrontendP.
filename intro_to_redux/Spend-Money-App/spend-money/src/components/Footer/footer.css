@@ -1,0 +1,54 @@
+.receipt_div{
+    height: 10rem;
+}
+.title{
+    font-weight: 900;
+    padding: 3px 0 0 3px;
+}
+.product{
+    overflow: scroll;
+    height: 10rem;
+}
+.total-price{
+    border-top: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+.price{
+    color: red;
+    font-weight: 600;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+.links .dev_name a{
+    font-size: 22px;
+    color: blue;
+}
+.links .dev_name a:hover{
+    text-decoration: underline;
+}
+.links .social{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    width: 10rem;
+}
+.links .social p:hover {
+    transform: scale(1.2);
+   
+}
+.links .social a:hover{
+    color: #5DADE2;
+}

@@ -1,0 +1,16 @@
+.initial_money{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 3rem;
+    background-color: #196F3D;
+    color: #fff;
+}
+.product_div{
+    max-height: 38rem;
+    overflow: scroll;
+   
+
+}
