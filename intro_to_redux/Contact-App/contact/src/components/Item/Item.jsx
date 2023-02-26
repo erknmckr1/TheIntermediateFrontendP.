@@ -15,9 +15,9 @@ function Item({ item }) {
     }
   };
   return (
-    <div className="d-flex justify-content-around aling-items-center">
+    <div className="d-flex justify-content-around aling-items-center  mt-2 ">
       <div
-        className="row col-9 "
+        className="row col-9 flex-wrap "
         style={{
           textAlign: "center",
           marginBottom: "3px",
@@ -25,11 +25,11 @@ function Item({ item }) {
       >
         <p className="col-4">{item.userName}</p>
         <p className="col-4">{item.phone}</p>
-        <p className="col-4">{item.email}</p>
+        <p className="col-4 ">{item.email}</p>
       </div>
       <div className="row col-3">
-        <div className="d-flex justify-content-around align-items-center">
-          <button className="btn bg-warning">
+        <div className="d-flex justify-content-around align-items-center  mt-xs-5 mt-sm-3 ">
+          <button className="btn bg-warning ">
             <Link to={`/edit/${item.id}`} className="text-white">
               <FontAwesomeIcon icon="edit" />
             </Link>

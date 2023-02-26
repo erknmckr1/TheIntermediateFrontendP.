@@ -6,12 +6,10 @@ import Header from "./Header/Header";
 import "./page.css";
 function Page() {
   return (
-    <div>
-      <Header/>
-      <div className="index">
-        <Form />
-        <List />
-      </div>
+    <div className="container">
+      <Header />
+      <Form />
+      <List />
     </div>
   );
 }

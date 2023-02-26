@@ -16,7 +16,7 @@ function List() {
     }
   };
   return (
-    <div className="List">
+    <div className="List container col-12 col-sm-12 col-md-12 col-lg-8">
       <div className="row col-9 titles">
         <p className="col-4 title">User Name</p>
         <p className="col-4 title">Phone</p>
@@ -27,10 +27,10 @@ function List() {
           <Item item={contact} key={contact.id} />
         ))}
       </div>
-      <div className="mt-3 search_div">
+      <div className="mt-3 search_div col-lg-10 col-md10 col-sm-12">
         <input
           type="text"
-          className="form-control"
+          className="form-control col-sm-1"
           placeholder="Search Contact"
         />
         {contacts.length > 0 && (

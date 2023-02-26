@@ -13,7 +13,7 @@ function Edit() {
   }
 
   return (
-    <div className='editForm_page'>
+    <div className='editForm_page container col-lg-10 col-md-10 col-sm-12'>
       <h1 className='title'>Edit Form</h1>
       <EditForm contact={contact}/>
       <button onClick={handleClick} className='btn mt-5 bg-primary text-white ' >Return</button>

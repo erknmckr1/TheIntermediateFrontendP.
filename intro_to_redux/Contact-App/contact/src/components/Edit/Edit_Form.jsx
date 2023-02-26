@@ -25,7 +25,7 @@ function EditForm(contact) {
     const [phone,setPhone] = useState(contact.contact.phone);
     
   return (
-    <div className="form_div">
+    <div className="form_div container col-lg-8 col-md-12 col-sm-12">
     <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label className="form-label">User Name</label>
