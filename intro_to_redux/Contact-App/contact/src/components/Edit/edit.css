@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+.editForm_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.editForm_page .title{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 4rem !important;
+}
