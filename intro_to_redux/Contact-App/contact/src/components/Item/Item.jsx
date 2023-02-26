@@ -28,7 +28,7 @@ function Item({ item }) {
         <p className="col-4 ">{item.email}</p>
       </div>
       <div className="row col-3">
-        <div className="d-flex justify-content-around align-items-center  mt-xs-5 mt-sm-3 ">
+        <div className="d-flex justify-content-around align-items-center  mt-xs-5 mt-sm-3 mt-md-0 ">
           <button className="btn bg-warning ">
             <Link to={`/edit/${item.id}`} className="text-white">
               <FontAwesomeIcon icon="edit" />
