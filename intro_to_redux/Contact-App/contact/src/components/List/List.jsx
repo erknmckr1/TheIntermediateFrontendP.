@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./list.css";
 import { useSelector } from "react-redux";
 import { contactSelector } from "../../redux/contactSlice";
@@ -6,9 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Item from "../Item/Item";
 import { deleteAllContact } from "../../redux/contactSlice";
 import { useDispatch } from "react-redux";
+import { useState } from "react";
 function List() {
   const contacts = useSelector(contactSelector.selectAll);
-  const total = useSelector(contactSelector.selectTotal);
+  const [searchValue,setSearchValue] = useState("")
+  // contact entitimizdeki verileri ınputa gırecegımız karaktere gore fıltreledık. 
+  const filteredContacts =  contacts.filter((contact)=>(contact.userName.toLowerCase()).includes(searchValue.toLowerCase()))
+  console.log(filteredContacts)
+  
+
   const dispatch = useDispatch();
   const handleAllDelete = () => {
     if (window.confirm("Are you sure you want to delete all contacts?")) {
@@ -23,7 +29,7 @@ function List() {
         <p className="col-4 title">Email</p>
       </div>
       <div className="contact_list">
-        {contacts.map((contact) => (
+        {filteredContacts.map((contact) => (
           <Item item={contact} key={contact.id} />
         ))}
       </div>
@@ -32,11 +38,13 @@ function List() {
           type="text"
           className="form-control col-sm-1"
           placeholder="Search Contact"
+          value={searchValue}
+          onChange={(e)=>{setSearchValue(e.target.value)}}
         />
         {contacts.length > 0 && (
           <div>
             <span className="align-items-center ms-3 fw-bold text-success">
-              {total}
+              {filteredContacts.length}
             </span>
             <button
               onClick={handleAllDelete}

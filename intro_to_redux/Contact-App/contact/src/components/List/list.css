@@ -16,7 +16,7 @@
 }
 .List .contact_list{
     overflow: scroll;
-    max-height: 280px;
+    max-height: 250px;
 }
 .search_div{
     display: flex;

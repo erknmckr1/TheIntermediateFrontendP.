@@ -3,12 +3,15 @@ import "./contact.css";
 import { nanoid } from "@reduxjs/toolkit";
 import { addContact } from "../../redux/contactSlice";
 import { useDispatch } from "react-redux";
+
 function Form() {
   const dispatch = useDispatch();
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [phone,setPhone] = useState("");
+  
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!userName || !phone || !password) return false;
