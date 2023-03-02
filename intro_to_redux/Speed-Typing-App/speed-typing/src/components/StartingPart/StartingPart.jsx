@@ -1,29 +1,23 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useCallback } from "react";
+import { useDispatch, useSelector, } from "react-redux";
 import { startHandle,setInputValue,keyDown } from "../../redux/WordsSlice/WordsSlice";
 function StartingPart() {
   const dispatch = useDispatch();
 
   const { words,timerDown,status,ınputValue,currentCharIndex,currentWordIndex,currentChar } = useSelector((state) => state.wordSlice);
   
-  const handleStart = () => {
-    dispatch(startHandle(ınputValue));
-  };
-  useEffect(()=>{
-    if(status==="started"){
-        setTimeout(()=>{handleStart()},1000)
-    }
-  },[timerDown])
-//   useEffect(() => {
-//     // status started oldugunda text ınput degıskenıne atanmıs ref objesıne odaklanacak. Started olmadıgı zaman ınput zaten dısabled'ıdı.
-//     if (status === 'started') {
-//       textInput.current.focus()
-//     }
-//   }, [status])
+ const handleStart = useCallback(() => {
+    dispatch(startHandle());
+}, [ dispatch]);
 
-useEffect(()=>{
-  
-})
+useEffect(() => {
+    if(status === "started") {
+        setTimeout(() => { handleStart() }, 1000);
+    }
+}, [timerDown, status, handleStart]);
+
+
 const handleKeyDown = (event)=>{
   dispatch(keyDown({key: event.key,keyCode:event.keyCode}))
 }

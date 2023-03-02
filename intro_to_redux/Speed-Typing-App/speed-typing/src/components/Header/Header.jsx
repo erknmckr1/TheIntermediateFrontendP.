@@ -2,7 +2,6 @@ import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faLinkedin,
-  faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
