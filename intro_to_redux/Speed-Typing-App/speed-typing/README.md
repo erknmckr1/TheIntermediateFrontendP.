@@ -1,0 +1,1 @@
+![Uygulama Görsel](./Speed-Typing-App.png)

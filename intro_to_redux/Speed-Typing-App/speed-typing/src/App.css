@@ -1,0 +1,33 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Tilt+Prism&display=swap');
+
+ .App{
+    
+ }
+ 
+ /* Header */
+ .title{
+    font-family: 'Rampart One', cursive;
+    font-size: 2.8rem;
+    border-bottom: 1px solid;
+    padding: 5px;
+ }
+ .links a{
+    font-size: 2.8rem;
+    padding: 0 1rem;
+    border-bottom: 1px solid;
+    color: #000;
+ }
+ .links a:hover{
+    font-size: 3rem;
+ }
+
+ /* Result css */
+ .result{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: 'Rampart One', cursive;
+ }
+ /* startingWord component */
+ .search_area{
+    font-family: 'Rampart One', cursive;
+ }
+ 
