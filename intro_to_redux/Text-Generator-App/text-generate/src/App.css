@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+header{
+  background-color: #F4F6F6;
+  height: 8rem;
+}
+.boxSize{
+  height: 5rem;
+}
+
+.section{
+  background-color: #2C3E50  !important;
+  color: #fff;
+  
+}
+.paragraphDiv{
+  height: 30rem;
+}

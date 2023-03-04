@@ -1,0 +1,1 @@
+![Uygulama Görsel](./Text-Generate-App.png)
