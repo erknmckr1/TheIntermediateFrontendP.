@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #ffcd38;
+  min-height: 100vh;
+  height: auto;
+}
+
+/* HEADER CSS  */
+
+.header {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border-bottom: 2px solid #424949;;
+}
+.help-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  float: left;
+  width: 50px;
+  height: 50px;
+  color: #424949;
+  background-color: #ffdd67;
+  font-size: 2rem;
+  font-family: monospace;
+  cursor: pointer;
+  margin: 2rem;
+  box-shadow: 10px 10px #646464;
+  transition: box-shadow 0.2s  ease-in ;
+}
+.help-button:active{
+  box-shadow: 5px 5px;
+}
+.help-button2{
+box-shadow: 1px 1px #646464 !important ;
+}
+
+.title{
+  font-size: 3rem;
+  font-family: monospace;
+  color: #424949;
+}
+
+
+/* Section Css */
+.section{
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  margin-top: 1rem;
+  
+}
+.left_page{
+  height: 35rem !important;
+  width: 35rem !important;
+  box-shadow: 10px 10px #646464;
+  background-color: #F4D03F !important;
+  overflow: auto;
+  overflow-x: hidden;
+  outline: none !important;
+  padding: 10px;
+  line-height: 2.5rem;
+}
+.right_page{
+  width: 35rem !important;
+  height: 35rem !important;
+  box-shadow: 10px 10px #646464;
+  background-color: #F4D03F !important;
+  overflow: auto;
+  overflow-x: hidden;
+  outline: none !important;
+  padding: 10px;
+  line-height: 2.5rem;
+}
+.left_page .right_page::-webkit-scrollbar {
+  width: 3px; /* kaydırma çubuğunun genişliği */
+}
+.left_page .right_page::-webkit-scrollbar-track {
+  background-color: #F4D03F !important; /* kaydırma çubuğunun genişliği */
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.links_div{
+  padding: 3rem;
+  
+}
+.link_list{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 20rem;
+}
+.list{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+  background-color: #ffdd67;
+  box-shadow: 10px 10px #646464;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.list:hover{
+  box-shadow: 5px 5px #646464;
+}
+.list a {
+  font-size: 2rem;
+  color: #424949;
+}
+
