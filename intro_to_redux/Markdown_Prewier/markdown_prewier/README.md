@@ -1,3 +1,5 @@
+![Uygulama Görseli](./Markdown_Prewier.png)
+
 ## Marked
 
 - npm install marked & yarn add marked
@@ -15,14 +17,14 @@ readOnly özelliği bir input veya textArea'nın içeriğinin kullanıcının de
 - dangerouslySetInnerHTML={processedText}
 
 Asagıda markdown olarak gelen verıyı html formatına donusturduk 18.satır (parseHtml) ardından 
-const parseHtml = marked(textCurrent, {sanitize:true});
-const processedText = { __html: parseHtml };
+- const parseHtml = marked(textCurrent, {sanitize:true});
+- const processedText = { __html: parseHtml };
 
- <div 
+-  <!--  <div 
       className="right_page  card" 
       dangerouslySetInnerHTML={{__html:parseHtml}}
       >
- </div>
+ </div> -->
 
 Yukarıdaki dangerouslySetInnerHTML özelliği HTML ozellıgını dogrudan bır react bılesenıne aktarmaya yarar. Bu özellik object turunde veri alır ve bu object gostermek ıstedıgımız html taglarına sahıp strıng bır verıdır . Bu ozellık genellıkle bır apiden veya baska bır kaynaktan dınamık olarak alinan HTML içeriğini göstermek ıcın kullanılır. 
 
