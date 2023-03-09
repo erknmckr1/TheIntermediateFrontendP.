@@ -1,0 +1,43 @@
+/* HEADER */
+.title{
+    color: #6C3DB9 ;
+}
+button {
+    width: 16rem;
+    height: 60px;
+    background-color: #1b1523;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 2rem;
+    font-weight:800;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 6px 12px;
+    
+
+}
+button:hover{
+    background-color: #BD78C1;
+    transition: ease-in 0.2s;
+}
+
+/* Section */
+.cards_table{
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    position: relative;
+}
+.cards_table img{
+    max-width: 100px;
+    max-height: 140px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    
+}
+.cards_table .cover{
+    height: 140px !important;
+    
+    
+}
