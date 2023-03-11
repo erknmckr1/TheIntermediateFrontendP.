@@ -1,6 +1,19 @@
 /* HEADER */
-.title{
+.header{
+    margin-top: 1rem;
     color: #6C3DB9 ;
+}
+.header .header_bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+.score_table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px !important;
 }
 button {
     width: 16rem;
@@ -23,21 +36,43 @@ button:hover{
 
 /* Section */
 .cards_table{
-    width: 1100px;
+    max-width: 1100px !important ;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
+    margin-top: 1rem;
+}
+
+
+/* Card */
+.card{
     position: relative;
 }
-.cards_table img{
-    max-width: 100px;
-    max-height: 140px;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    
+
+.card  img{
+width: 100px;
+height: 140px;
+border: 2px solid #fff;
+border-radius: 10px;
 }
-.cards_table .cover{
-    height: 140px !important;
-    
-    
+
+.card .frontImg{
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in-out 0.4s;
 }
+
+.flipp .frontImg{
+    transform: rotateY(0deg) ;
+    transition: all ease-in-out 0.4s;
+}
+
+.card .coverImg {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+.flipp .coverImg{
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+}
+

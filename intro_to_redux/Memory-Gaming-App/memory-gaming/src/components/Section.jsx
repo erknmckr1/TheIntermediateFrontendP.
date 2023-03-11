@@ -1,22 +1,44 @@
-import React from 'react'
-import { useSelector,useDispatch } from 'react-redux'
-import Card from './Card'
-import { chooseCard} from '../redux/CardsSlice'
+import { useSelector,useDispatch } from "react-redux";
+import Card from "./Card";
+import { useEffect } from "react";
+import { matchedCard,returnCard } from "../redux/CardsSlice";
+
+
 function Section() {
-    const dispatch = useDispatch()
+ 
+  const { chooseFirst, chooseSecond, cards } = useSelector(
+    (state) => state.cardsSlice
+  );
+  const dispatch = useDispatch()
+
+    useEffect(() => {
+      async function fetchData() {
+        if (chooseFirst && chooseSecond) {
+          await dispatch(matchedCard());
+        }
     
-    const cards = useSelector((state)=>state.cardsSlice.cards)
-   console.log(cards)
-     const handleChoose = (card)=>{
-     dispatch(chooseCard(card))
-     }
+        if (!chooseSecond.matched && !chooseFirst.matched) {
+          setTimeout(async () => {
+            await dispatch(returnCard());
+          }, 1000);
+        }
+      }
+      fetchData();
+    }, [dispatch, chooseFirst, chooseSecond]);
+
+  
+
   return (
-    <div className='cards_table'>
-        {cards.map((card)=>(
-           <Card card={card} key={card.id} handleChoose={handleChoose}/>
-        ))}
+    <div className="cards_table">
+      {cards.map((card) => (
+        <Card
+          card={card}
+          key={card.id}
+         
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default Section
+export default Section;
