@@ -1,11 +1,13 @@
 import { useSelector,useDispatch } from "react-redux";
 import Card from "./Card";
-import { useEffect } from "react";
+import { useEffect} from "react";
 import { matchedCard,returnCard } from "../redux/CardsSlice";
 
 
+
+
 function Section() {
- 
+
   const { chooseFirst, chooseSecond, cards } = useSelector(
     (state) => state.cardsSlice
   );
@@ -34,9 +36,10 @@ function Section() {
         <Card
           card={card}
           key={card.id}
-         
         />
+       
       ))}
+       
     </div>
   );
 }

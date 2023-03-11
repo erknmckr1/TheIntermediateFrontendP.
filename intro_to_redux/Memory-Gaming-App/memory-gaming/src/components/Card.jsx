@@ -17,7 +17,7 @@ function Card({ card}) {
     
   }
   return (
-    <div className="card">
+    <div className={`card ${card.matched ? 'matched' : ''}`}>
       <div className={(card===chooseFirst || card===chooseSecond || card.matched) ? "flipp" :""}>
       <img className="frontImg" src={card.src} alt="footballer card" />
       <img onClick={handleClick}  className="coverImg" src="./img/fifa21.png" alt="cover" />
