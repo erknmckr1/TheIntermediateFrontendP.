@@ -1,7 +1,7 @@
 import React from "react";
-import { useEffect } from "react";
+
 import { useDispatch,useSelector } from "react-redux";
-import { chooseCard,matchedCard,returnCard } from "../redux/CardsSlice";
+import { chooseCard } from "../redux/CardsSlice";
 
 function Card({ card}) {
   const dispatch = useDispatch()
