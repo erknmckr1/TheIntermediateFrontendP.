@@ -18,7 +18,7 @@ function Section() {
         if (chooseFirst && chooseSecond) {
           await dispatch(matchedCard());
         }
-    
+        
         if (!chooseSecond.matched && !chooseFirst.matched) {
           setTimeout(async () => {
             await dispatch(returnCard());

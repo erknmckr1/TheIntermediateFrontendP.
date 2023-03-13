@@ -51,7 +51,7 @@ export const CardsSlice = createSlice({
         state.isDisabled = false;
       }else{
         state.point -= 10
-
+        // Burada setTimeout fonksıyonu neden calısmadı ? ? ? ? ? ?? ? ? 
       }
     },
     returnCard: (state) => {
