@@ -1,0 +1,16 @@
+.title{
+    color:#5D6D7E ;
+    font-weight: 800;
+}
+
+.cardDiv{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+}
+.cardArea{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

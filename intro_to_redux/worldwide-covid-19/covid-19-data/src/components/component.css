@@ -1,0 +1,46 @@
+/* navbar */
+.navbar{
+    height: 5rem !important;
+    padding: 0 5rem !important;
+    background-color: #5D6D7E;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #DA4622;
+}
+.navRight{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing:3px;
+}
+
+
+
+/* Card css start */
+.cardD {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    letter-spacing: 3px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.cardD .card-header{
+    padding: 5px;
+    border-bottom: 3px solid;
+    
+    
+}
+.cardD .card-header .title{
+    font-size: 30px;
+    font-weight: 900;
+}
+.cardD .card-body{
+    margin-top: 1rem;
+}
+.cardD .card-body .value{
+    font-size: 35px;
+    
+}
