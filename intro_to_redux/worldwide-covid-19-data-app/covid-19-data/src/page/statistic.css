@@ -1,0 +1,22 @@
+
+.title{
+    color:#5D6D7E ;
+    font-weight: 800;
+}
+.select{
+    border: none;
+    border-bottom: 2px solid #5D6D7E;
+    outline: none;
+}
+
+.cardDiv{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+}
+.cardArea{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

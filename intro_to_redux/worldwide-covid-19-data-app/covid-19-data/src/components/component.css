@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+/* navbar */
+.navbar{
+    position: relative;
+    height: 5rem !important;
+    padding: 0 5rem !important;
+    background-color: #5D6D7E;
+    
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #DA4622;
+    position: absolute;
+    left: 0;
+    margin-left: 5rem;
+}
+.logo img{
+    height: 77px;
+}
+.navRight{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing:3px;
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
+}
+
+
+
+/* Card css start */
+.cardD {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    letter-spacing: 3px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.cardD .card-header{
+    padding: 5px;
+    border-bottom: 3px solid;
+    
+    
+}
+.cardD .card-header .title{
+    font-size: 30px;
+    font-weight: 900;
+}
+.cardD .card-body{
+    margin-top: 1rem;
+}
+.cardD .card-body .value{
+    font-size: 35px;
+    
+}
+/*Chart*/
+.chart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Footer */
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid #F2F3F4;
+    background-color: #F4F6F6 ;
+}
+.author{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+.brands{
+    width: 8rem !important;
+    display: flex   ;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+}
+.brands a {
+    color: #5D6D7E;
+}
+.brands a:hover{
+    color: #85C1E9;
+    transition: color 0.2s;
+}
