@@ -25,15 +25,16 @@ describe("List component to rendering...", () => {
       writable: true,
     });
 
-    const copyBtn = screen.getAllByText("Click to copy emoji");
-    fireEvent.click(copyBtn[0]);
-    expect(navigator.clipboard.writeText).toHaveBeenCalled();
+    const copyBtn = screen.getAllByText("Click to copy emoji"); // "click to copy emojı" yazan tum ogelerı aldık 
+    fireEvent.click(copyBtn[0]); // adlıgımız oglerın ılkıne tıklama eylemı gerceklestırdık. 
+    expect(navigator.clipboard.writeText).toHaveBeenCalled(); // navigator.clipboard.writeText in cagırılıp cagırılmadıgına baktık.
   });
 
   test("Appropriate emoji should be rendered when filtering is done", () => {
     const filter = "grin";
     
 
+    // emojı dızımızde yukarıda yazdıgımız fılter parametresının degerı ise filteredEmojıes adında bır dızı olusturduk. ve expect fonksıyonuyla olusan dızının uzunlugu 3 mu degıl mı ona baktık.
     const filteredEmojies = emojiList.filter((item) => {
      return item.keywords.toLocaleLowerCase().match(filter) ||
         item.title.toLowerCase().match(filter);
@@ -41,7 +42,7 @@ describe("List component to rendering...", () => {
     });
     expect(filteredEmojies).toHaveLength(3);
 
-
+    // dızı ıcerısınde yakaladıgımız objenın tıtle ve symbol degerlerı var mı onu test ettık.
     console.log(filteredEmojies)
     filteredEmojies.forEach((emoji) => {
       expect(screen.getByText(emoji.title)).toBeInTheDocument();

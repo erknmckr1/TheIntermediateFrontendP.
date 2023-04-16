@@ -9,11 +9,10 @@ function EmojiList() {
     setActive(index)
   }
 
+  // datayı ınputa yazdıgımız verıye gore lısteleyelım. 
   const filteredEmoji = emojies.filter((item) => {
     return item.keywords.toLowerCase().includes(inputText.toLowerCase());
   });
-  
- 
 
   return (
     <div className="listDiv">
